@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css"/>
+
+    <title>Pomodoro App</title>
+</head>
+<body onload="template()">
+    <div class="container">
+        <!--Heading-->
+        <h1 class="heading">Pomodoro App</h1>
+
+        <!--Main Timer-->
+        <div class="timer-contanier timer">
+            <div class="row">
+                <div class="column">
+                    <h4 id="minutes"></h4>
+                </div>
+                <div class="column-mid">
+                    <h4>:</h4>
+                </div>
+                <div class="column">
+                    <h4 id="seconds"></h4>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h3 class="done"></h3>
+        </div>
+
+        <!-- Start and Reset Buttons -->
+        <div class="btn-container">
+            <button class="btn start" onclick="start()">
+                <i class="fas fa-play-circle fa-3x"></i>
+            </button>
+            <a href="index.html"><i class="stop fas fa-stop-circle fa-3x"></i></a>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
